@@ -30,8 +30,11 @@ Bertalign-Fast is a lightweight, CPU-optimized version of [Bertalign](https://gi
 
 ```bash
 git clone https://github.com/bfsujason/bertalign_fast.git
+
 cd bertalign_fast
+
 pip install -r requirements.txt
+
 python download_model.py
 ```
 
