@@ -39,6 +39,9 @@ cd bertalign_fast
 pip install -r requirements.txt
 
 python download_model.py
+
+# Use mirror site if you cannot visit Hugging Face
+python download_model.py --mirror hf-mirror.com
 ```
 
 ## Quick Start
