@@ -7,4 +7,5 @@ safetensors==0.5.3
 usearch==2.17.10
 
 # For Bertalign-Fast GUI
+pyqt5==5.15.11
 igraph==1.0.0
