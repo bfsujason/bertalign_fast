@@ -4,7 +4,7 @@ An automatic mulitlingual sentence aligner optimized for CPU.
 
 ## Overview
 
-**Bertalign-Fast** is a lightweight, CPU-optimized version of [Bertalign](https://github.com/bfsujason/bertalign) that uses [modern static word embeddings](https://huggingface.co/sentence-transformers/static-similarity-mrl-multilingual-v1) instead of transformer-based models.
+Bertalign-Fast is a lightweight, CPU-optimized version of [Bertalign](https://github.com/bfsujason/bertalign) that uses [modern static word embeddings](https://huggingface.co/sentence-transformers/static-similarity-mrl-multilingual-v1) instead of transformer-based models.
 
 ### Key Features
 
@@ -16,12 +16,12 @@ An automatic mulitlingual sentence aligner optimized for CPU.
 
 ### When to Use Which?
 
-- **Use Bertalign** when:
+- Use Bertalign when:
   - You have GPU available
   - Maximum accuracy is critical
   - Processing time is not a constraint
 
-- **Use Bertalign-Fast** when:
+- Use Bertalign-Fast when:
   - You need fast CPU inference
   - Processing large volumes of text
   - Running on resource-constrained systems
