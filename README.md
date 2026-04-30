@@ -20,11 +20,13 @@ Bertalign-Fast is a lightweight, CPU-optimized version of [Bertalign](https://gi
   - You have GPU available
   - Maximum accuracy is critical
   - Processing time is not a constraint
+  - Working with complex literary or highly nuanced texts
 
 - Use Bertalign-Fast when:
   - You need fast CPU inference
   - Processing large volumes of text
   - Running on resource-constrained systems
+  - Working with non-literary texts (news, technical documents, etc.)
 
 ## Installation
 
