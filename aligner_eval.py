@@ -2,8 +2,8 @@
 
 """
 Usage examples:
-    python bertalign_fast_eval.py --dataset berg
-    python bertalign_fast_eval.py --dataset mac
+    python aligner_eval.py --dataset berg
+    python aligner_eval.py --dataset mac
     
 """
 
