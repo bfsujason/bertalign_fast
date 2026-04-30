@@ -10,6 +10,7 @@ Bertalign-Fast is a lightweight, CPU-optimized version of [Bertalign](https://gi
 
 - 🚀 **Blazing fast on CPU** - No GPU required
 - 💡 **Lightweight** - Use static word embeddings
+- 🌍 **Multilingual** - Support 30+ languages
 - 🎯 **Accurate** - Maintains high alignment quality
 - 🖥️ **User-friendly GUI** - Visual interface for alignment tasks
 - 🔄 **Multi-version alignment** - Align multiple language pairs or document versions
