@@ -104,4 +104,45 @@ The running time includes both embedding and aligning.
 | berg     | 0.909      | 0.911    | 0.910 | 4.79s   |
 | mac      | 0.870      | 0.892    | 0.881 | 19.49s  |
 
+## GUI Usage
 
+Bertalign-Fast includes a graphical interface for alignment tasks.
+
+### Lauch
+
+```bash
+python aligner_gui.py
+```
+
+### Features
+
+- Automatic language detection with manual override
+- Align one source against multiple targets simultaneously
+- Interactive table editing: split, merge, delete, and add rows
+- Undo/Redo support (Ctrl+Z / Ctrl+Y)
+- Mark/Unmark rows with a distinct color for review
+- Export to TMX, TSV, and JSON formats
+- Project save/load
+
+### Editing Actions
+
+| Action     | How                                           |
+| ---------- | ------------------------------------------    |
+| Edit cell  | Double-click the cell                         |
+| Mark rows  | Select rows ¡ú right-click ¡ú Mark/Unmark       |
+| Split text | While editing ¡ú right-click ¡ú Split at cursor |
+| Move text  | While editing ¡ú right-click ¡ú Move Up/Down    |
+| Merge rows | Select rows ¡ú right-click ¡ú Merge             |
+
+### Demo: Multi-Language and Multi-Version Alignment
+
+The `data/demo/` directory contains a Chinese source file and three target files, which can be used to demonstrate two workflows:
+
+**Multi-language alignment** ¡ª Align a [Chinese source](data/demo/src/001.txt) against both an [English](data/demo/tgt/001.txt) and a [Polish](data/demo/tgt/002.txt) human translation (zh-en-pl), producing a trilingual parallel corpus in one pass.
+
+**Multi-version alignment** ¡ª Align a [Chinese source](data/demo/src/001.txt) against a [human](data/demo/tgt/001.txt) and a [ChatGPT](data/demo/tgt/003.txt) English translation side by side, useful for comparing translation quality across different versions of the same text.
+
+To try it: load the source file, click "Add Target File" to add multiple target files, then click "Start Alignment."
+
+![Automatic Alignment](docs/images/gui_align.png)
+![Interactive Editing](docs/images/gui_edit.png)
