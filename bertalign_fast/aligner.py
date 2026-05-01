@@ -35,7 +35,8 @@ class BertalignFast:
         languages:  List of supported languages. 
         src_sents:  List of source sentences (populated after align_sents).
         tgt_sents:  List of target sentences.
-        result:     List of (src_indices, tgt_indices, bead_score).
+        alignment:  List of (src_indices, tgt_indices, bead_score).
+        bitext:     List of (src_sent, tgt_sent)
     """
 
     def __init__(self, model_path=MODEL_PATH):
@@ -99,6 +100,9 @@ class BertalignFast:
         else:
             src_sents = src_text.splitlines()
             tgt_sents = tgt_text.splitlines()
+            
+        self.src_sents = src_sents
+        self.tgt_sents = tgt_sents
 
         source_length = len(src_sents)
         target_length = len(tgt_sents)
@@ -175,10 +179,9 @@ class BertalignFast:
             second_path,
             second_alignment_types,
         )
-
-        self.result = second_alignment
-        self.src_sents = src_sents
-        self.tgt_sents = tgt_sents
+        
+        self.alignment = second_alignment
+        self.bitext = self.get_bitext()
 
         elapsed = time.time() - start_time
         print(
@@ -187,14 +190,14 @@ class BertalignFast:
         )
         print(f"Time spent: {elapsed:.2f} secs\n")
         
-    def get_result(self):
-        results = []
-        for bead in (self.result):
+    def get_bitext(self):
+        bitext = []
+        for bead in (self.alignment):
             src_line = _join_sentences(bead[0], self.src_sents)
             tgt_line = _join_sentences(bead[1], self.tgt_sents)
             #print(src_line + "\n" + tgt_line + "\n")
-            result.append((src_line, tgt_line))
-        return result
+            bitext.append((src_line, tgt_line))
+        return bitext
 
 def _join_sentences(indices, sentences):
     """Concatenate the sentences at indices into a single string."""

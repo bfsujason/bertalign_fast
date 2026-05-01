@@ -54,10 +54,23 @@ python download_model.py --mirror hf-mirror.com
 ```python
 from bertalign_fast import BertalignFast
 
+# Initialize aligner
 aligner = BertalignFast()
 
+# Load texts to be aligned
+src_file = "data/demo/src/001.txt"
+tgt_file = "data/demo/tgt/001.txt"
+src_text = open(src_file, "rt", encoding="utf-8").read()
+tgt_text = open(tgt_file, "rt", encoding="utf-8").read()
+
+# Start aligning
 aligner.align_sents(src_text, tgt_text)
 
-print(aligner.result)
+# Print sentence indices and bead scores
+print(aligner.alignment)
+
+# Print aligned sentences
+for src_sent, tgt_sent in aligner.bitext:
+    print(f"{src_sent}\n{tgt_sent}\n")
 ```
 

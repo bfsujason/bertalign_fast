@@ -2,6 +2,7 @@
 
 """
 Usage examples:
+    python aligner_eval.py --dataset gov
     python aligner_eval.py --dataset berg
     python aligner_eval.py --dataset mac
     
@@ -43,7 +44,7 @@ def main():
         aligner.align_sents(src, tgt, split=args.split)
         #print(aligner.result)
 
-        test_alignments.append([(x, y) for x, y, score in aligner.result])
+        test_alignments.append([(x, y) for x, y, _ in aligner.alignment])
 
         gold_file = os.path.join(gold_dir, file)
         gold_alignments.append(read_alignments(gold_file))
