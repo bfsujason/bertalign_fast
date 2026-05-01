@@ -108,6 +108,8 @@ The running time includes both embedding and aligning.
 
 Bertalign-Fast includes a graphical interface for alignment tasks.
 
+The GUI was prototyped and refined using Claude Sonnet 4.5 as a coding assistant.
+
 ### Lauch
 
 ```bash
@@ -146,3 +148,20 @@ To try it: load the source file, click "Add Target File" to add multiple target 
 
 ![Automatic Alignment](images/gui_align.png)
 ![Interactive Editing](images/gui_edit.png)
+
+## Acknowledgments
+
+- [Hugging Face Static Embedding Models](https://huggingface.co/blog/static-embeddings)
+- [Vecalign](https://github.com/thompsonb/vecalign)
+- [Bleualign](https://github.com/rsennrich/bleualign)
+- [Adaptative Aligner](https://gricad-gitlab.univ-grenoble-alpes.fr/kraifo/ailign)
+
+## Support
+
+Questions, bug reports, and feature requests are welcome. Please open an [issue](https://github.com/bfsujason/bertalign_fast/issues) on GitHub.
+
+Feedback on the following is especially appreciated:
+
+- **Language pairs**: The evaluation only covers zh-ja, de-fr, and zh-en. If you test other pairs, we'd love to hear your results.
+
+- **Operating systems**: The GUI has been tested on Windows. Reports from macOS and Linux users would be very helpful.
