@@ -162,6 +162,6 @@ Questions, bug reports, and feature requests are welcome. Please open an [issue]
 
 Feedback on the following is especially appreciated:
 
-- **Language pairs**: The evaluation only covers zh-ja, de-fr, and zh-en. If you test other pairs, we'd love to hear your results.
+- Language pairs: The evaluation only covers zh-ja, de-fr, and zh-en. If you test other pairs, we'd love to hear your results.
 
-- **Operating systems**: The GUI has been tested on Windows. Reports from macOS and Linux users would be very helpful.
+- Operating systems: The GUI has been tested on Windows. Reports from macOS and Linux users would be very helpful.
