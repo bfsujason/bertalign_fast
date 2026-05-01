@@ -47,7 +47,8 @@ class BertalignFast:
         )
         self.src_sents = []
         self.tgt_sents = []
-        self.result = []
+        self.alignment = []
+        self.bitext = []
         
     def align_sents(
         self,
