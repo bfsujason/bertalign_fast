@@ -129,14 +129,14 @@ python aligner_gui.py
 | Action     | How                                           |
 | ---------- | ------------------------------------------    |
 | Edit cell  | Double-click the cell                         |
-| Mark rows  | Select rows ¡ú right-click ¡ú Mark/Unmark       |
-| Split text | While editing ¡ú right-click ¡ú Split at cursor |
-| Move text  | While editing ¡ú right-click ¡ú Move Up/Down    |
-| Merge rows | Select rows ¡ú right-click ¡ú Merge             |
+| Mark rows  | Select rows â†’ right-click â†’ Mark/Unmark       |
+| Split text | While editing â†’ right-click â†’ Split at cursor |
+| Move text  | While editing â†’ right-click â†’ Move Up/Down    |
+| Merge rows | Select rows â†’ right-click â†’ Merge             |
 
 ### Demo: Multi-Language and Multi-Version Alignment
 
-The `data/demo/` directory contains a Chinese source file and three target files, which can be used to demonstrate two workflows:
+The `data/demo` directory contains a Chinese source file and three target files, which can be used to demonstrate two workflows:
 
 **Multi-language alignment**: Align a [Chinese source](data/demo/src/001.txt) against both an [English](data/demo/tgt/001.txt) and a [Polish](data/demo/tgt/002.txt) human translation (zh-en-pl), producing a trilingual parallel corpus in one pass.
 
