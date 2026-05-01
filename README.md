@@ -74,3 +74,30 @@ for src_sent, tgt_sent in aligner.bitext:
     print(f"{src_sent}\n{tgt_sent}\n")
 ```
 
+## Evaluation
+
+Run on Intel Core i7-11800H CPU @ 2.30GHz, 16G RAM 
+
+### Test Data
+
+| dataset  | genre      | language | # 1-1 alignment |
+| :------: | :--------: | :------: | -----------:    |
+| gov      | political  | zh-ja    | 1574 (87.4%)    |
+| berg     | yearbook   | de-fr    | 678 (74.0%)     |
+| mac      | literary   | zh-en    | 2628 (59.8%)    |
+
+```bash
+python aligner_eval.py --dataset gov
+
+python aligner_eval.py --dataset berg
+
+python aligner_eval.py --dataset mac
+```
+
+### Result
+
+| dataset  | precision  | recall   | F1    | time    |
+| :------: | :--------: | :------: | :---: | -----:  |
+| gov      | 0.986      | 0.988    | 0.987 | 13.20s  |
+| berg     | 0.909      | 0.911    | 0.910 | 4.79s   |
+| mac      | 0.870      | 0.892    | 0.881 | 19.49s  |
