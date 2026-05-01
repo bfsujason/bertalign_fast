@@ -4,11 +4,11 @@ An automatic mulitlingual sentence aligner optimized for CPU.
 
 ## Overview
 
-Bertalign-Fast is a lightweight, CPU-optimized version of [Bertalign](https://github.com/bfsujason/bertalign) that uses [modern static word embeddings](https://huggingface.co/sentence-transformers/static-similarity-mrl-multilingual-v1) instead of contextualized word embeddings.
+Bertalign-Fast is a lightweight, CPU-optimized version of [Bertalign](https://github.com/bfsujason/bertalign) that uses [modern SWE](https://huggingface.co/sentence-transformers/static-similarity-mrl-multilingual-v1) (Static Word Embeddings) instead of CWE (Contextualized Word Embeddings).
 
 ### Key Features
 
-- 🚀 **Blazing fast on CPU** - No GPU required
+- 🚀 **Fast on CPU** - No GPU required
 - 💡 **Lightweight** - Use static word embeddings
 - 🌍 **Multilingual** - Support 30+ languages
 - 🎯 **Accurate** - Maintain high alignment quality
@@ -36,8 +36,13 @@ git clone https://github.com/bfsujason/bertalign_fast.git
 
 cd bertalign_fast
 
+# Core only
 pip install -r requirements.txt
 
+# If you want the GUI
+pip install pyqt5 igraph
+
+# Download SWE model
 python download_model.py
 
 # Use mirror site if you cannot visit Hugging Face
