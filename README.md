@@ -96,8 +96,12 @@ python aligner_eval.py --dataset mac
 
 ### Result
 
+The running time includes both embedding and aligning.
+
 | dataset  | precision  | recall   | F1    | time    |
 | :------: | :--------: | :------: | :---: | -----:  |
 | gov      | 0.986      | 0.988    | 0.987 | 13.20s  |
 | berg     | 0.909      | 0.911    | 0.910 | 4.79s   |
 | mac      | 0.870      | 0.892    | 0.881 | 19.49s  |
+
+
