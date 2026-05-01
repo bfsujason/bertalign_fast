@@ -138,11 +138,11 @@ python aligner_gui.py
 
 The `data/demo/` directory contains a Chinese source file and three target files, which can be used to demonstrate two workflows:
 
-**Multi-language alignment** ¡ª Align a [Chinese source](data/demo/src/001.txt) against both an [English](data/demo/tgt/001.txt) and a [Polish](data/demo/tgt/002.txt) human translation (zh-en-pl), producing a trilingual parallel corpus in one pass.
+**Multi-language alignment**: Align a [Chinese source](data/demo/src/001.txt) against both an [English](data/demo/tgt/001.txt) and a [Polish](data/demo/tgt/002.txt) human translation (zh-en-pl), producing a trilingual parallel corpus in one pass.
 
-**Multi-version alignment** ¡ª Align a [Chinese source](data/demo/src/001.txt) against a [human](data/demo/tgt/001.txt) and a [ChatGPT](data/demo/tgt/003.txt) English translation side by side, useful for comparing translation quality across different versions of the same text.
+**Multi-version alignment**: Align a [Chinese source](data/demo/src/001.txt) against a [human](data/demo/tgt/001.txt) and a [ChatGPT](data/demo/tgt/003.txt) English translation side by side, useful for comparing translation quality across different versions of the same text.
 
 To try it: load the source file, click "Add Target File" to add multiple target files, then click "Start Alignment."
 
-![Automatic Alignment](docs/images/gui_align.png)
-![Interactive Editing](docs/images/gui_edit.png)
+![Automatic Alignment](images/gui_align.png)
+![Interactive Editing](images/gui_edit.png)
