@@ -1,6 +1,6 @@
 # Bertalign-Fast
 
-An automatic mulitlingual sentence aligner optimized for CPU.
+An automatic multilingual sentence aligner optimized for CPU.
 
 ## Overview
 
@@ -110,7 +110,7 @@ Bertalign-Fast includes a graphical interface for alignment tasks.
 
 The GUI was prototyped and refined using Claude Sonnet 4.5 as a coding assistant.
 
-### Lauch
+### Launch
 
 ```bash
 python aligner_gui.py
@@ -154,7 +154,11 @@ To try it: load the source file, click "Add Target File" to add multiple target 
 - [Hugging Face Static Embedding Models](https://huggingface.co/blog/static-embeddings)
 - [Vecalign](https://github.com/thompsonb/vecalign)
 - [Bleualign](https://github.com/rsennrich/bleualign)
-- [Adaptative Aligner](https://gricad-gitlab.univ-grenoble-alpes.fr/kraifo/ailign)
+- [Adaptive Aligner](https://gricad-gitlab.univ-grenoble-alpes.fr/kraifo/ailign)
+
+## License
+
+This project is licensed under the [GPL-3.0 License](LICENSE).
 
 ## Support
 
