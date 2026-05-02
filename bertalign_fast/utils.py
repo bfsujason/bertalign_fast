@@ -103,7 +103,7 @@ def detect_lang(text):
 def split_sents(text, lang_code):
     if lang_code == "zh":
         sents = _split_zh_sents(text)
-    elif lang_code in ["ar", "bg", "ja", "fa", "hi", "hy", "ja", "mr", "my", "ur"]: # pysbd
+    elif lang_code in ["ar", "bg", "fa", "hi", "hy", "ja", "mr", "my", "ur"]: # pysbd
         splitter = pysbd.Segmenter(language=lang_code, clean=False)
         sents = splitter.segment(text)
         sents = [sent.strip() for sent in sents]
