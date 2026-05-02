@@ -149,6 +149,19 @@ To try it: load the source file, click "Add Target File" to add multiple target 
 ![Automatic Alignment](images/gui_align.png)
 ![Interactive Editing](images/gui_edit.png)
 
+## Citation
+
+If you use Bertalign-Fast in your research, please cite:
+
+```bibtex
+@software{Bertalign-Fast,
+  author = {Lei Liu},
+  title = {Bertalign-Fast: An Accessible Multilingual Sentence Aligner with CPU Optimization and Interactive Proofreading},
+  year = {2026},
+  url = {https://github.com/bfsujason/bertalign_fast}
+}
+```
+
 ## Acknowledgments
 
 - [Hugging Face Static Embedding Models](https://huggingface.co/blog/static-embeddings)
