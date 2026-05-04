@@ -42,7 +42,7 @@ def main():
 
         print(f"Start aligning {src_file} to {tgt_file}")
         aligner.align_sents(src, tgt, split=args.split)
-        #print(aligner.result)
+        #print(aligner.alignment)
 
         test_alignments.append([(x, y) for x, y, _ in aligner.alignment])
 

@@ -167,6 +167,9 @@ def second_pass_align(
                     tgt_vec = tgt_vecs[tgt_step - 1, tgt_idx - 1]
 
                     bead_score = np.dot(src_vec, tgt_vec)
+                    
+                    # ---- Size compensation: offset the systematic dilution of larger beads ----
+                    bead_score += lambda_size * (src_step + tgt_step)
 
                     # ---- Length-ratio penalty ----
                     if length_penalty:
@@ -178,9 +181,6 @@ def second_pass_align(
 
                         penalty = np.sqrt(short_side / long_side)
                         bead_score *= penalty
-                    
-                    if lambda_size != 0.0:
-                        bead_score += lambda_size * ((src_step + tgt_step) - 2)
 
                 score += bead_score
                 if score > best_score:

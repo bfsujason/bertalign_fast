@@ -54,9 +54,8 @@ class Encoder:
             sentences:          List of N sentence strings.
             num_overlaps:       Number of overlap layers (typically max_align − 1).
             embedding_dim:      Matryoshka truncation dimension. None keeps full 1024.
-            mean_center:        If True, subtract the per-side centroid (computed over
-                                all bead embeddings of every size) from each bead before
-                                L2-normalisation.
+            mean_center:        If True, subtract the per-side centroid from each bead
+                                before L2-normalisation.
 
         Returns:
             embedding_matrix:   float array, shape (num_overlaps, N, embedding_dim).
@@ -68,7 +67,7 @@ class Encoder:
         vectors = self.encode(overlap_strings, embedding_dim=embedding_dim)
         
         if mean_center:
-            vectors -= np.mean(vectors, axis=0, keepdims=True)  
+            vectors -= np.mean(vectors[:len(sentences)], axis=0, keepdims=True)  
         norms = np.linalg.norm(vectors, axis=1, keepdims=True)
         vectors = vectors / (norms + 1e-9)
         

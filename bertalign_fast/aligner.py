@@ -73,9 +73,8 @@ class BertalignFast:
                                 treat each line as a sentence.
             max_align:          Maximum bead size: src_count + tgt_count <= max_align.
             embedding_dim:      Matryoshka truncation dimension. None keeps full 1024.
-            mean_center:        If True, subtract the per-side centroid (computed over
-                                all bead embeddings of every size) from each bead before
-                                L2-normalisation.
+            mean_center:        If True, subtract the per-side centroid from each bead
+                                before L2-normalisation.
             top_k:              Top-k 1-1 candidates per source in the first pass.
             window_size:        Half-width added around each anchor when building
                                 the second-pass search band.
