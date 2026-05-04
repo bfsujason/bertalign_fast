@@ -110,7 +110,7 @@ def second_pass_align(
         alignment_types:    int array, shape (num_types, 2).
                             Each row is [src_step, tgt_step].
         skip_penalty:       Fixed score added for insertions and deletions.
-        lambda_size:        Coefficient on the (m + n - 2) size bonus. Set to
+        lambda_size:        Coefficient on the (m + n) size bonus. Set to
                             0 to disable.
         length_penalty:     If True, multiply embedding score by sqrt(min / max)
                             of source/target byte lengths.

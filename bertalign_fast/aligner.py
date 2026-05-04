@@ -79,12 +79,12 @@ class BertalignFast:
             window_size:        Half-width added around each anchor when building
                                 the second-pass search band.
             skip_penalty:       Fixed score for deletion / insertion beads.
+            lambda_size:        Coefficient on the (m + n) size bonus,
+                                added before the length penalty. Compensates for
+                                the cosine bias against larger beads. 0 disables.
+                                Typical useful values are 0.01 - 0.05.
             length_penalty:     If True, multiply each bead score by
                                 sqrt(min / max) of source / target byte lengths.
-            lambda_size:        Coefficient on the (m + n - 2) size bonus,
-                                added after the length penalty. Compensates for
-                                the cosine bias against larger beads. 0 disables.
-                                Typical useful values are 0.01 - 0.05.   
         """
         start_time = time.time()
         
