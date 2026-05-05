@@ -167,7 +167,7 @@ If you use Bertalign-Fast in your research, please cite:
 - [Hugging Face Static Embedding Models](https://huggingface.co/blog/static-embeddings)
 - [Vecalign](https://github.com/thompsonb/vecalign)
 - [Bleualign](https://github.com/rsennrich/bleualign)
-- [Adaptive Aligner](https://gricad-gitlab.univ-grenoble-alpes.fr/kraifo/ailign)
+- [AIlign](https://gricad-gitlab.univ-grenoble-alpes.fr/kraifo/ailign)
 
 ## License
 
