@@ -149,6 +149,10 @@ To try it: load the source file, click "Add Target File" to add multiple target 
 ![Automatic Alignment](images/gui_align.png)
 ![Interactive Editing](images/gui_edit.png)
 
+## Funding
+
+The work is supported by the Social Science Development Research Project of Hebei Province (Grant No. 20230104006)。
+
 ## Citation
 
 If you use Bertalign-Fast in your research, please cite:
